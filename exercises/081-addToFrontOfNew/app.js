@@ -1,6 +1,15 @@
 
 function addToFrontOfNew(arr, element) {
     // Write your function here
+    let output = []
+
+    arr.forEach(e =>{
+        output.push(e)
+    })
+
+    output.unshift(element)
+
+    return output
 }
 
 var input = [1, 2];
