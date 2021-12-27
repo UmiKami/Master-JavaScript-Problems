@@ -6,7 +6,7 @@ var obj = {
 function removeNumberValues(obj) {
     // your code here
     for(let property in obj){
-        typeof obj[property] == "int" ? delete obj[property] : null
+        typeof obj[property] == "number" ? delete obj[property] : null
     }
 
     return obj
