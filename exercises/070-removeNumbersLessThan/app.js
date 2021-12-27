@@ -5,4 +5,9 @@ var obj = {
 }
 function removeNumbersLessThan(num, obj) {
     // your code here
+    for(let property in obj){
+        obj[property] < num ? delete obj[property] : undefined
+    }
+
+    return obj
 }
