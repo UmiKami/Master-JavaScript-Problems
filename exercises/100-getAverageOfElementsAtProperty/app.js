@@ -1,8 +1,9 @@
 function getAverageOfElementsAtProperty(obj, key) {
   // your code here
   let holder = 0
+  let newArr = obj[key]
 
-  if(obj[key].length == 0){
+  if(!obj[key] || obj[key].length == 0){
     return 0
   }
 
