@@ -1,6 +1,17 @@
 function computeFactorialOfN(n) {
     // your code here
-    return Math.ceil(Math.sqrt(2*Math.PI*n) * Math.pow((n/Math.E),n))
+    let numArr = []
+    let holder = 1
+
+    for(let i = n; i > 0; i--){
+        numArr.push(i)
+    }
+
+    numArr.forEach(e=>{
+        holder *= e
+    })
+
+    return holder
 }
 
 var output = computeFactorialOfN(3); console.log(output); // --> 6
