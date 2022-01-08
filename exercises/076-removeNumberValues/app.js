@@ -5,6 +5,11 @@ var obj = {
 };
 function removeNumberValues(obj) {
     // your code here
+    for(let property in obj){
+        typeof obj[property] == "number" ? delete obj[property] : null
+    }
+
+    return obj
 }
 
 removeNumberValues(obj);
